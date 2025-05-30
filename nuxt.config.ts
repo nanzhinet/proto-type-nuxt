@@ -43,6 +43,9 @@ export default defineNuxtConfig({
         resolvers: [ElementPlusResolver({ importStyle: false })]  // // importStyle: false  禁用自动导入样式,必须加这个，不然服务端会nodejs报错
       }),
     ],
+    optimizeDeps: {
+      include: ['@popperjs/core']
+    }
   },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: false },
