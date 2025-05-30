@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    siteUrl: 'proto-type-nuxt-git-dev-dy-yls-projects.vercel.app',
+    siteUrl: 'youngmock.top/',
     autoLastmod: true,
   },
   runtimeConfig: {

@@ -63,5 +63,10 @@
     "clearImages": "Reset image",
     "preview": "Preview",
     "cancel": "Cancel"
+  },
+  "head": {
+    "title": "Wallpaper Mockup Generator - Templates for Mobile, Tablet, and Computer",
+    "keywords": "wallpaper mockup, iPhone mockup template, iPad mockup template, Mac mockup template, Xiaohongshu wallpaper account, Douyin wallpaper account, wallpaper template tool, multi-platform coverage",
+    "description": "A practical tool for generating iPhone, iPad, and Mac lock screen and desktop wallpaper mockup templates with one click. This tool allows you to apply wallpapers to iPhone, iPad, and Mac lock screen/desktop mockups, saving time on creating mockup previews. Simple to use and customizable for designing wallpaper mockup templates."
   }
 }
