@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/icon'
   ],
-
   runtimeConfig: {
     // apiSecret: process.env.API_SECRET, // 服务端
     public: {
@@ -43,10 +42,18 @@ export default defineNuxtConfig({
         resolvers: [ElementPlusResolver({ importStyle: false })]  // // importStyle: false  禁用自动导入样式,必须加这个，不然服务端会nodejs报错
       }),
     ],
-    optimizeDeps: {
-      include: ['@popperjs/core']
-    }
+    // optimizeDeps: {
+    //   include: ['@popperjs/core', 'element-plus']
+    // }
   },
+  // build: {
+  //   transpile: ['@popperjs/core', 'element-plus'] // pnpm build后找不到@popperjs/core，所以加这个配置
+  // },
+  // nitro: {
+  //   externals: {
+  //     inline: ['@popperjs/core']
+  //   }
+  // },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: false },
   css: ['element-plus/dist/index.css','@/assets/css/tailwind.css', '@/assets/css/_variables.scss', '@/assets/css/font.css'],
