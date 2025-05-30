@@ -7,8 +7,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    siteUrl: 'proto-type-nuxt-git-dev-dy-yls-projects.vercel.app',
+    autoLastmod: true,
+  },
   runtimeConfig: {
     // apiSecret: process.env.API_SECRET, // 服务端
     public: {
