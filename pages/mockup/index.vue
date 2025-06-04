@@ -1610,7 +1610,7 @@ function clickProto(name) {
 
 function clickBackground() {
   if (isVerticalScreen.value) {
-    activeProtoName.value = '背景';
+    activeProtoName.value = "background";
   }
 }
 
@@ -2688,7 +2688,7 @@ onMounted(() => {
             </div>
 
           </el-tab-pane>
-          <el-tab-pane v-if="isVerticalScreen" label="背景" name="背景" class="background">
+          <el-tab-pane v-if="isVerticalScreen" :label="t('mockup.background')" name="background" class="background">
             <el-segmented @change="backgroundTypeChange" v-model="selectedProto.background.type"
               :options="screenLabelOptions(backgroundOptions)" block />
 
@@ -2741,7 +2741,7 @@ onMounted(() => {
             </template>
 
             <div class="water-switch-setting">
-              <div>水印</div>
+              <div>{{ t('mockup.author') }}</div>
               <el-switch v-model="waterSetting.enable" style="--el-switch-on-color: #13ce66;" />
             </div>
             <div v-if="waterSetting.enable" class="water-setting">
