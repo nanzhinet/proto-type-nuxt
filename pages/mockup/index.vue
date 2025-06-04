@@ -1845,8 +1845,8 @@ onMounted(() => {
         <div>
           <slot name="title">
             <NuxtLink to="/" class="font-bold text-lg text-primary-500">
-              <Icon name="simple-icons:nuxtdotjs" class="font-black text-xl font-mono mr-2 inline-block" />
-              <span class="capitalize">{{ awesome.name }}</span>
+              <img src="/logo/android-chrome-192x192.png" alt="Logo" class="w-6 h-6 mr-2 inline-block align-middle" />
+              <span class="capitalize text-[#008C8C]">{{ awesome.name }}</span>
             </NuxtLink>
           </slot>
         </div>
@@ -2856,8 +2856,8 @@ onMounted(() => {
 
       <div class="tools">
 
-        <a class="icp-number" v-if="!isMiniProgram && !isVerticalScreen && isChinaRegion" href="https://beian.miit.gov.cn"
-          target="_blank">蜀ICP备2023035883号-5</a>
+        <a class="icp-number" v-if="!isMiniProgram && !isVerticalScreen && isChinaRegion"
+          href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2023035883号-5</a>
         <div class="export">
           <div class="text" @click=result()>
             <div class="export-text">{{ t('mockup.export') }}</div>
