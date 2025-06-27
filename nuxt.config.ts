@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         file: 'zh.json',
       },
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     detectBrowserLanguage: false, // ✅ 正确：禁用浏览器语言检测,否则默认是浏览器的语言
     lazy: true, // 懒加载语言包
     langDir: 'locales/', // 存放语言文件的目录
