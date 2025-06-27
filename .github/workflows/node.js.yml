@@ -11,22 +11,27 @@ jobs:
     runs-on: ubuntu-latest # 或根据需要选择其他系统（如 macos-latest/windows-latest）
 
     steps:
+      # 1. 检查出代码仓库
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      # 2. 设置 Node.js 环境
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '20.19.0' # 指定 Node.js 版本
 
+      # 3. 安装依赖
       - name: Install Dependencies
         run: npm install
 
+      # 4. 构建项目
       - name: Build Project
         run: npm run build
 
+      # 5. 上传构建产物
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: my-build-artifact # 自定义名称
-          path: ./dist | ./target | ./build # 替换为实际输出目录
+          path: ./.output/**/* # 递归上传 .output 目录下的所有文件
