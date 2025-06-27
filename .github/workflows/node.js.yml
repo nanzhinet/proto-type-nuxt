@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: my-build-artifact # 自定义名称
           path: ./dist | ./target | ./build # 替换为实际输出目录
