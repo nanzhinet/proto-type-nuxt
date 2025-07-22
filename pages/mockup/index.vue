@@ -920,7 +920,7 @@ let protoTypeList = ref([
       },
       {
         defaultProtoUrl: iphoneHand1Image,
-        exampleName: t("mockup.handheld"),
+        exampleName: t("mockup.csyx"),
         protoList: [
           {
             type: 'iphoneType',
