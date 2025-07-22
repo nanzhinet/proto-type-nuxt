@@ -38,6 +38,7 @@ const ipadDefault1Image = '/image/proto/ipad-default1.png'
 const ipadVerticalImage = '/image/proto/ipad-vertical.png'
 const ipadDefault2Image = '/image/proto/ipad-default2.png'
 const ipadPoolImage = '/image/proto/ipad-pool.png'
+const csyxImage = '/image/proto/csyx.png'
 const poolBackgroundImage = '/image/background/pool.jpg'
 const ipadDesktopImage = '/image/proto/ipad-desktop.png'
 const desktopBackgroundImage = '/image/background/desktop.jpg'
@@ -919,7 +920,7 @@ let protoTypeList = ref([
         }
       },
       {
-        defaultProtoUrl: iphoneHand1Image,
+        defaultProtoUrl: csyxImage,
         exampleName: t("mockup.csyx"),
         protoList: [
           {
@@ -930,11 +931,10 @@ let protoTypeList = ref([
             style: {
               width: '426px',
               height: '877px',
-              transform: 'rotate(-1deg) translateX(-21px) translateY(0px) scaleX(1.0) scaleY(1.0) perspective(none) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
-              filter: 'drop-shadow(rgba(0, 0, 0, 0.25) -10px 10px 10px)',
+              transform: 'rotate(26deg) translateX(10px) translateY(-12px) scaleX(1.18779) scaleY(1.21154) perspective(1000px) skewX(5.5deg) skewY(-16deg) rotateX(3deg) rotateY(-7deg) rotateZ(0deg)',
             },
             paperStyleMethod: (proto) => {
-              return "width: calc(100% - 36px);height: calc(100% - 32px); border-radius: 50px;position: absolute;left: 18px;top: 16px;"
+              return "width:"390px",height:"844.8px","border-radius":"50px",position:"absolute",left:"18px",top:"16px"  "
             },
             paperChatStyle: {
               position: 'absolute',
