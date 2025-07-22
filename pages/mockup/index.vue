@@ -918,6 +918,51 @@ let protoTypeList = ref([
           },
         }
       },
+      {
+        defaultProtoUrl: iphoneHand1Image,
+        exampleName: t("mockup.handheld"),
+        protoList: [
+          {
+            type: 'iphoneType',
+            name: 'iPhone',
+            frame: true,
+            smartIsLand: true,
+            style: {
+              width: '426px',
+              height: '877px',
+              transform: 'rotate(-1deg) translateX(-21px) translateY(0px) scaleX(1.0) scaleY(1.0) perspective(none) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+              filter: 'drop-shadow(rgba(0, 0, 0, 0.25) -10px 10px 10px)',
+            },
+            paperStyleMethod: (proto) => {
+              return "width: calc(100% - 36px);height: calc(100% - 32px); border-radius: 50px;position: absolute;left: 18px;top: 16px;"
+            },
+            paperChatStyle: {
+              position: 'absolute',
+              width: '390px',
+              height: '653.12px',
+              top: '115px',
+              left: '18px',
+            },
+            screenType: screenOptions['iphoneType'][0],
+            selectedTime: new Date(),
+            selectedDate: new Date(),
+            systemColor: defaultSystemColor,
+            dateTimeColor: defaultDateTimeColor
+          }
+        ],
+        background: {
+          type: backgroundOptions[0],
+          autoUpdate: false,
+          defaultBackgroundUrl: hand1BackgroundImage,
+          needBlur: false,
+          backgroundImageStyle: () => {
+            return {
+              display: !selectedProto.value.background.needBlur ? 'block' : 'none',
+
+            }
+          },
+        }
+      },
     ]
   },
   {
