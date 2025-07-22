@@ -2,7 +2,7 @@ import type { AppConfigInput } from 'nuxt/schema'
 
 export default defineAppConfig({
   awesome: {
-    name: 'Wallpaper Mockup Generator',
+    name: '南屿壁纸样机生成器',
     description:
       'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.',
     project: {
@@ -43,7 +43,7 @@ export default defineAppConfig({
         year: new Date().getFullYear(),
       },
       welcome: {
-        title: 'WallPaper Mockup Generator',
+        title: '南屿壁纸样机生成器',
         disableInfoReplaceIndexInWelcomePage: true,
       },
     },
